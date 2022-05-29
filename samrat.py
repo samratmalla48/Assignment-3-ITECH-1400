@@ -90,3 +90,45 @@ class GippslandPerch :
     def __str__(self):
         return f"{self.NAME}({self.LATIN_NAME}),weights {self.weight/1000} KG."
 #  creating rest two classes
+class GippslandPerch :
+    Max_Weight = 10000
+    Max_Eating_Weight = 6000
+    NAME = 'Gippsland Perch'
+    LATIN_NAME = 'Macquaria Colonorum'
+    def __init__(self,weight):
+        if weight not in range(self.Max_Weight + 1):
+            raise ValueError(f'weight must be between 0 and {self.Max_Weight}')
+        self.weight = weight
+    #getter
+    def get_weight(self):
+            return self.weight
+    # setter
+    def set_weight(self,weight):
+            if weight not in range({self.MAX_Weight+1}):
+                raise ValueError(f'weight must be between 0 and {self.Max_Eating_Weight}')
+            self.weight= weight
+    def is_good_eating(self):
+        return self.weight in range(MIN_EATING_WEIGHT,self.Max_Eating_Weight)
+    def __str__(self):
+        return f"{self.NAME}({self.LATIN_NAME}),weights {self.weight/1000} KG."
+    class GippslandPerch :
+        Max_Weight = 10000
+    Max_Eating_Weight = 6000
+    NAME = 'Gippsland Perch'
+    LATIN_NAME = 'Macquaria Colonorum'
+    def __init__(self,weight):
+        if weight not in range(self.Max_Weight + 1):
+            raise ValueError(f'weight must be between 0 and {self.Max_Weight}')
+        self.weight = weight
+    #getter
+    def get_weight(self):
+            return self.weight
+    # setter
+    def set_weight(self,weight):
+            if weight not in range({self.MAX_Weight+1}):
+                raise ValueError(f'weight must be between 0 and {self.Max_Eating_Weight}')
+            self.weight= weight
+    def is_good_eating(self):
+        return self.weight in range(MIN_EATING_WEIGHT,self.Max_Eating_Weight)
+    def __str__(self):
+        return f"{self.NAME}({self.LATIN_NAME}),weights {self.weight/1000} KG."
